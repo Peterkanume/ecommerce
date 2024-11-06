@@ -1,0 +1,106 @@
+/* navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #222; /* Dark background */
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo-img {
+    width: 45px; 
+    height: auto; 
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF4141;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    color: #fff;
+}
+
+.nav-menu li:hover {
+    color: #FF4141;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #FF4141;
+    position: absolute;
+    bottom: -5px; /* Position hr below text */
+    left: 10%;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-login-cart button {
+    width: 130px;
+    height: 45px;
+    border: 2px solid #FF4141;
+    border-radius: 25px;
+    background-color: #FF4141;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-login-cart button:hover {
+    background-color: #ff6666;
+}
+
+.cart-icon {
+    width: 30px; 
+    height: auto;
+    cursor: pointer;
+}
+
+.nav-cart-count {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.nav-login-cart {
+    position: relative; /* Allow for cart-count positioning */
+}
